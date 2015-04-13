@@ -13,6 +13,9 @@ There's a frood who really knows where his towel is
 - Fix i18n.
   [vincentfretin]
 
+- Fix compatibility to new version of jquery (replaced ``live`` with ``on``)
+  [cekk]
+
 
 1.0b11 (2014-11-27)
 ^^^^^^^^^^^^^^^^^^^

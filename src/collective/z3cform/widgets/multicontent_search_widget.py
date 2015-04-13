@@ -323,7 +323,7 @@ class MultiContentSearchWidget(MultiContentTreeWidget):
                 }
 
                 $("#show-more-items-results a").unbind("click");
-                $("#show-more-items-results a").live("click", function(event) {
+                $("#show-more-items-results a").on("click", function(event) {
                     event.preventDefault();
                     var offset = $("#show-more-items-results").attr("data-offset");
                     showMoreSpinner();
@@ -331,7 +331,7 @@ class MultiContentSearchWidget(MultiContentTreeWidget):
                     return false;
                 });
                 $("#relatedWidget-search-button").unbind("click")
-                $("#relatedWidget-search-button").live("click", function(event) {
+                $("#relatedWidget-search-button").on("click", function(event) {
                     event.preventDefault();
                     var urlSearch = '%(urlSearch)s'
                     showSearchSpinner();

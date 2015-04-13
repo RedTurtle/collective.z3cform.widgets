@@ -69,7 +69,7 @@ if(jQuery) (function($){
 
 (function ($) {
    $.fn.liveDraggable = function (opts) {
-      this.live("mouseover", function() {
+      this.on("mouseover", function() {
          if (!$(this).data("init")) {
             $(this).data("init", true).draggable(opts);
          }
@@ -107,11 +107,11 @@ $(function() {
         			}
         		}).sortable();
     $(".relatedWidget ul.recieve li").append("<div class='related-item-close'>X</div>");
-    $(".relatedWidget ul.recieve li a").live("click", function(e) {
+    $(".relatedWidget ul.recieve li a").on("click", function(e) {
       e.preventDefault();
       return false;
     });
-    $(".related-item-close").live("click", function() {
+    $(".related-item-close").on("click", function() {
         $(this).parent().remove();
     });
 
